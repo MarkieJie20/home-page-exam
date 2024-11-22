@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Static E-Commerce Site</title>
+  
+   <link rel="stylesheet" type="text/css" href="index.css">
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+
+ 
+
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container">
+      <a class="navbar-brand" href="#">Guitar Monster Shop</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section with Carousel -->
+  <section class="hero">
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/g1.jpg" class="d-block w-100" alt="Banner 1">
+          <div class="carousel-caption d-none d-md-block">
+            <h1>Shop the Latest Trends</h1>
+            <p>Explore our exclusive collection now.</p>
+            <a href="#products" class="btn btn-primary">Shop Now</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/g2.jpg" class="d-block w-100" alt="Banner 2">
+          <div class="carousel-caption d-none d-md-block">
+            <h1>Best Deals of the Season</h1>
+            <p>Don't miss out on our special discounts.</p>
+            <a href="#products" class="btn btn-primary">Shop Now</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/g3.jpg" class="d-block w-100" alt="Banner 3">
+          <div class="carousel-caption d-none d-md-block">
+            <h1>Exclusive Offers</h1>
+            <p>Limited-time offers you can't resist.</p>
+            <a href="#products" class="btn btn-primary">Shop Now</a>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+
+
+
+
+
+  <!-- Why Choose Us Section -->
+  <section class="why-choose-us">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Text Content -->
+        <div class="col-md-6">
+          <h2>Why Choose Us?</h2>
+          <p>🎸 <strong>Expertly Crafted Guitars:</strong> Every guitar in our shop is carefully selected for its quality, craftsmanship, and sound.</p>
+          <p>💡 <strong>Expert Advice:</strong> Our team of guitar enthusiasts is here to guide you in choosing the perfect guitar or gear to suit your needs.</p>
+          <p>🏆 <strong>Trusted by Thousands:</strong> Join a community of happy customers who trust us for their musical journey.</p>
+          <p>🚚 <strong>Fast & Reliable Shipping:</strong> Enjoy fast and secure delivery right to your doorstep.</p>
+        </div>
+
+        <!-- Carousel -->
+        <div class="col-md-6">
+          <div id="whyChooseUsCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              
+              <div class="carousel-item active">
+                <img src="images/choose1.jpg" class="d-block w-100" alt="Carousel Image 1">
+              </div>
+
+              <div class="carousel-item">
+                <img src="images/choose2.jpg" class="d-block w-100" alt="Carousel Image 2">
+              </div>
+
+              <div class="carousel-item">
+                <img src="images/choose3.jpg" class="d-block w-100" alt="Carousel Image 3">
+              </div>
+
+              <div class="carousel-item">
+                <img src="images/choose4.jpg" class="d-block w-100" alt="Carousel Image 3">
+              </div>
+
+              <div class="carousel-item">
+                <img src="images/choose5.jpg" class="d-block w-100" alt="Carousel Image 3">
+              </div>
+
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#whyChooseUsCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#whyChooseUsCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+  <!-- Products Section -->
+  <section id="products" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Our Products</h2>
+      <div class="row g-4">
+
+        <!-- Product Card 1 -->
+        <div class="col-md-4">
+          <div class="card">
+            <img src="images/p1.jpg" class="card-img-top" alt="Product 1">
+            <div class="card-body">
+              <h5 class="card-title">Gibson Les Paul</h5>
+              <p class="card-text">$645.00</p>
+              <a href="#" class="btn btn-primary">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product Card 2 -->
+        <div class="col-md-4">
+          <div class="card">
+            <img src="images/p2.jpg" class="card-img-top" alt="Product 2">
+            <div class="card-body">
+              <h5 class="card-title">Fender Classic</h5>
+              <p class="card-text">$500.00</p>
+              <a href="#" class="btn btn-primary">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product Card 3 -->
+        <div class="col-md-4">
+          <div class="card">
+            <img src="images/p3.jpg" class="card-img-top" alt="Product 3">
+            <div class="card-body">
+              <h5 class="card-title">Sqoe SESG400</h5>
+              <p class="card-text">$150.00</p>
+              <a href="#" class="btn btn-primary">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Product Card 4 -->
+        <div class="col-md-4">
+          <div class="card">
+            <img src="images/p4.jpg" class="card-img-top" alt="Product 3">
+            <div class="card-body">
+              <h5 class="card-title">Tagima Stella NTM HSS S Style</h5>
+              <p class="card-text">$125.00</p>
+              <a href="#" class="btn btn-primary">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product Card 5 -->
+        <div class="col-md-4">
+          <div class="card">
+            <img src="images/p5.jpg" class="card-img-top" alt="Product 3">
+            <div class="card-body">
+              <h5 class="card-title">Stinger Martin ST3</h5>
+              <p class="card-text">$200.00</p>
+              <a href="#" class="btn btn-primary">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product Card 6 -->
+        <div class="col-md-4">
+          <div class="card">
+            <img src="images/p6.jpg" class="card-img-top" alt="Product 3">
+            <div class="card-body">
+              <h5 class="card-title">Ibanez RG350MZ Yellow</h5>
+              <p class="card-text">$800.00</p>
+              <a href="#" class="btn btn-primary">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+   <!-- Contact Section -->
+  <section id="contact" class="py-5 contact-section">
+    <div class="container">
+      <h2 class="text-center mb-4">Contact Us</h2>
+      <p class="text-center mb-5">Got questions? Need advice on guitars? We're here to help!</p>
+
+      <div class="row g-4">
+        <!-- Contact Form -->
+        <div class="col-lg-6">
+          <h4>Send Us a Message</h4>
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Your Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Your Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="4" placeholder="Write your message here" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Send Message</button>
+          </form>
+        </div>
+
+        <!-- Contact Details -->
+        <div class="col-lg-6">
+          <h4>Store Details</h4>
+          <ul class="list-unstyled">
+            <li>
+              <strong>Address:</strong> 123 Guitar Street, Music City, 45678
+            </li>
+            <li>
+              <strong>Phone:</strong> <a href="tel:+1234567890">+1 (234) 567-890</a>
+            </li>
+            <li>
+              <strong>Email:</strong> <a href="mailto:info@guitarshop.com">info@guitarmonstershop.com</a>
+            </li>
+            <li>
+              <strong>Hours:</strong> Mon - Sat: 9 AM - 8 PM, Sun: 10 AM - 6 PM
+            </li>
+          </ul>
+
+          <!-- Embedded Google Map -->
+          <div class="ratio ratio-16x9 mt-4">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509487!2d144.9559263154448!3d-37.81720997975144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577af9a0ee77c38!2sGuitar%20Center!5e0!3m2!1sen!2sus!4v1697476020736!5m2!1sen!2sus"
+              width="600"
+              height="450"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- Footer -->
+  <footer class="bg-dark text-light text-center py-3">
+    <div class="container">
+      <p>&copy; 2024 ShopEase. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS Bundle -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  ></script>
+</body>
+</html>
